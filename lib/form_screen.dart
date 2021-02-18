@@ -298,10 +298,10 @@ class FormScreenState extends State<FormScreen> {
         ),
         InkWell(
           onTap: () {
-            // if (!_formKey.currentState.validate()) {
-            //   return;
-            // }
-            // _formKey.currentState.save();
+            if (!_formKey.currentState.validate()) {
+              return;
+            }
+            _formKey.currentState.save();
 
             Navigator.push(
               context,
